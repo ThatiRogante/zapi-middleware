@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 // Webhook do n8n
-const N8N_WEBHOOK_URL = 'https://n8n-n8n.he93v9.easypanel.host/webhook/330f9dd0-0f89-47d8-9d89-4a20b1f19a1e';
+const N8N_WEBHOOK_URL = 'https://n8n-n8n.he93v9.easypanel.host/webhook-test/330f9dd0-0f89-47d8-9d89-4a20b1f19a1e';
 
 app.post('/zapi', async (req, res) => {
   const body = req.body;
@@ -52,3 +52,4 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`🚀 Middleware rodando na porta ${PORT}`);
 });
+
